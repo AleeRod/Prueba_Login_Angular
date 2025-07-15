@@ -1,0 +1,38 @@
+.Login{
+    height: 250px;
+    width: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color:whitesmoke;
+    text-align: center;
+    align-content: center;
+    font-family:'Roboto', sans-serif;
+}
+
+button{
+    background-color: black;
+    color: whitesmoke;
+}
+
+input[type="email"], input[type="password"]{
+    border: 2px solid #000;
+    margin: 0 0 1em 0;
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+button[type="submit"]{
+    background-color: #999;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
