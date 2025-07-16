@@ -1,0 +1,22 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * *  Inicio del Login * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Tarjeta con el formulario -->
+
+    <div class="Login">
+        <h4>Iniciar Sesión</h4>
+        <form (ngSubmit)="login()" #loginForm="ngForm">
+            <div>
+                <input type="email" name="correo" [(ngModel)]="email" class="form-control" placeholder="Ingrese el correo" required>                
+            </div>
+            <div>
+                <input type="password" name="contrasena" [(ngModel)]="pass" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * Final del Login * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
