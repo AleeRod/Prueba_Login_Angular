@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +11,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './login.css'
 })
 export class Login {
+
+  constructor(private router: Router) {}
+
 
   email: string = '';
   pass: string = '';
@@ -28,6 +32,7 @@ export class Login {
         if(this.email === CorreoValido && this.pass == PassValida){
       console.log("Inicio de sesion exitoso")
       alert("Inicio de sesion exitoso")
+      this.router.navigate(['/Bienvenida'],{queryParams: {email: this.email}});
     }
     else{
       console.log("Correo o contraseña erroneo")

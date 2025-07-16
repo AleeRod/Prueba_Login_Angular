@@ -8,10 +8,10 @@
         <h4>Iniciar Sesión</h4>
         <form (ngSubmit)="login()" #loginForm="ngForm">
             <div>
-                <input type="email" name="correo" [(ngModel)]="email" class="form-control" placeholder="Ingrese el correo" required>                
+                <input type="email" name="email" [(ngModel)]="email" class="form-control" placeholder="Ingrese el correo" required>                
             </div>
             <div>
-                <input type="password" name="contrasena" [(ngModel)]="pass" class="form-control" placeholder="Contraseña" required>
+                <input type="password" name="pass" [(ngModel)]="pass" class="form-control" placeholder="Contraseña" required>
             </div>
             <button type="submit">Ingresar</button>
         </form>
